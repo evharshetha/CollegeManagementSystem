@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button3:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+</style>
+<meta charset="UTF-8">
+<title>student Add Form</title>
+</head>
+<body>
+<h1>
+<marquee width="100%" direction="right" height="100px">
+COLLEGE MANAGEMENT SYSTEM
+</marquee>
+</h1>
+<h3>
+<center>STUDENT ADD FORM</center>
+</h3>
+<br>
+</br>
+ <form action="/url" method="GET">
+        <label>
+            FIRST NAME:
+            <input type="text" name="first_name" minlength="3" maxlength="20" placeholder="Harshetha" required>
+        </label><br></br>
+        <label>
+            LAST NAME:
+            <input type="text" name="last_name" minlength="3" maxlength="20" placeholder="harshi" required>
+        </label><br></br>
+        <label>
+            DEPARTMENT NAME:
+            <input type="text" name="department" minlength="3" maxlength="20" placeholder="CSE" required>
+        </label><br></br>
+        <label>
+            SECTION:
+            <input type="text" name="section" minlength="3" maxlength="20" placeholder="A or B" required>
+        </label><br></br>
+        <label>
+            YEAR:
+            <input type="text" name="year" minlength="3" maxlength="20" placeholder="second year" required>
+        </label><br></br>
+        <label>
+            EMAIL ID:
+            <input type="text" name="email_id" minlength="3" maxlength="20" placeholder="Harshetha123@gmail.com" required>
+        </label>
+    </form>
+    <br></br>
+ <input class="button button1" type="button" onclick="location.href='file:///C:/Users/rushi/OneDrive/Desktop/CMS/src/main/resources/templates/studentlist.html';" value="Submit" />
+
+<hr>
+ <input class="button button2" type="button" onclick="location.href='file:///C:/Users/rushi/OneDrive/Desktop/CMS/src/main/resources/templates/HomePage.html';" value="Back to home page" />
+
+</form>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Course</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+<script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+ <style>
+ .button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;;
+}
+
+.button1:hover {
+  background-color: #008CBA;;
+  color: white;
+}
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;;
+}
+
+.button2:hover {
+  background-color: #008CBA;;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div>
+<h2 >Course Creation</h2>
+<tr>
+<div align = "left" >
+<hr>
+ <input class="button button1" type="button" onclick="location.href='file:///C:/Users/rushi/OneDrive/Desktop/CMS/src/main/resources/templates/addcourse.html';" value="Add New Course" >
+ <input class="button button2" type="button" onclick="location.href='file:///C:/Users/rushi/OneDrive/Desktop/CMS/src/main/resources/templates/HomePage.html';" value="Back to home page" />
+
+</div>
+</tr>
+ 
+<div class="col-sm-8" align = "center">
+        <div class="panel-body" align = "center" >
+                
+                
+   <table class="table">
+<thead class="thead-dark">
+        <tr>
+            <th>Course ID</th>
+            <th>Course Name</th>
+            <th>Duration</th>
+            <th>Course Fee</th>
+           
+   </tr>
+  </thead>
+  <tbody>
+  <br>
+  </br>
+      <tr  th:each="course : ${listcourse}">
+<td th:text="${course.id}">1</td>
+<td th:text="${course.coursename}">Information Tecnology</td>
+<td th:text="${course.duration}">Four Years</td>
+<td th:text="${course.coursefee}">1 Lakh</td>
+</tr>
+<tr  th:each="course : ${listcourse}">
+<td th:text="${course.id}">2</td>
+<td th:text="${course.coursename}">Computer Science</td>
+<td th:text="${course.duration}">Four Years</td>
+<td th:text="${course.coursefee}">1 Lakh</td>
+ </tr>
+ <tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">3</td>
+<td th:text="${course.coursename}">ECE </td>
+<td th:text="${course.duration}">Four Years</td> 
+<td th:text="${course.coursefee}">1 Lakh</td>  
+</tr>
+ </tr>
+ <tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">4</td>
+<td th:text="${course.coursename}">EEE </td>
+<td th:text="${course.duration}">Four Years</td> 
+<td th:text="${course.coursefee}">1 Lakh</td>  
+</tr>
+ </tr>
+ <tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">5</td>
+<td th:text="${course.coursename}">MECH </td>
+<td th:text="${course.duration}">Four Years</td> 
+<td th:text="${course.coursefee}">1 Lakh</td>  
+</tr>
+ </tr>
+ <tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">6</td>
+<td th:text="${course.coursename}">Civil </td>
+<td th:text="${course.duration}">Four Years</td> 
+<td th:text="${course.coursefee}">1 Lakh</td>  
+</tr>
+ </tr>
+ <tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">7</td>
+<td th:text="${course.coursename}">Aeronautical </td>
+<td th:text="${course.duration}">Four Years</td> 
+<td th:text="${course.coursefee}">1 Lakh</td>  
+</tr>
+ </tr>
+ <tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">8</td>
+<td th:text="${course.coursename}">BBA </td>
+<td th:text="${course.duration}">Three Years</td> 
+<td th:text="${course.coursefee}">75k</td>  
+</tr>
+ <tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">9</td>
+<td th:text="${course.coursename}">MBA </td>
+<td th:text="${course.duration}">Two Years</td> 
+<td th:text="${course.coursefee}">75k</td>  
+</tr>
+ <tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">9</td>
+<td th:text="${course.coursename}">BCA </td>
+<td th:text="${course.duration}">Three Years</td> 
+<td th:text="${course.coursefee}">75k</td>  
+</tr>
+ <tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">10</td>
+<td th:text="${course.coursename}">MCA </td>
+<td th:text="${course.duration}">Two Years</td> 
+<td th:text="${course.coursefee}">75k</td>  
+</tr>
+<tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">11</td>
+<td th:text="${course.coursename}">M.Tech </td>
+<td th:text="${course.duration}">Two Years</td> 
+<td th:text="${course.coursefee}">75k</td>   
+</tr>
+<tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">12</td>
+<td th:text="${course.coursename}">M.S </td>
+<td th:text="${course.duration}">Two Years</td>
+<td th:text="${course.coursefee}">75k</td>    
+</tr>
+<tr  th:each="course : ${listcourse}">
+ <td th:text="${course.id}">13</td>
+<td th:text="${course.coursename}">M.S Integrated course </td>
+<td th:text="${course.duration}">Five Years</td>  
+<td th:text="${course.coursefee}">1 lakh</td>  
+</tr>
+  </tbody>
+  </table>                
+</div>
+</div>
+ 
+</tr>
+ 
+</tbody>
+</table>
+<div>
+ 
+</body>
+</html>
